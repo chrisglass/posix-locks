@@ -2,7 +2,7 @@ posix-locks
 ===========
 
 This is a very simple repository demonstrating how to create mutually excluding
-POSIX file locks between go and python.
+POSIX file locks between go, python, and rust.
 
 Notes about POSIX locks vs. flocks
 -----------------------------------
@@ -29,6 +29,11 @@ It will grab a hardcoded lock in the current directory forever (until killed).
 
 As for the golang program, the python3 script will acquire a lock on a hardcoded
 lock in the root directory of this project, and sleep forever (until killed).
+
+### Running the rust program
+
+As for previous programs, the rust version will acquire a lock on a hardcoded
+file in the root directory of this project, and sleep forever (until killed).
 
 ### Results
 

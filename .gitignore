@@ -1,2 +1,6 @@
 *.lock
 posix-locks
+
+# Added by cargo
+
+/target

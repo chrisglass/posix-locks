@@ -27,8 +27,8 @@ func main() {
 		Start:  0,
 		Len:    0,
 	}
-	// Passing the syscall.F_SETLKW syscall insteat (mind the W) will let
-	// the program wait for the lock to be available (blocking) before it
+	// Passing the syscall.F_SETLKW syscall instead (mind the W) will let
+	// the program wait for the lock to be available (blocking) before
 	// proceeding.
 	err = syscall.FcntlFlock(file.Fd(), syscall.F_SETLK, &flockT)
 	if err != nil {
