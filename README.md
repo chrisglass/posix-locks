@@ -4,6 +4,9 @@ posix-locks
 This is a very simple repository demonstrating how to create mutually excluding
 POSIX file locks between go, python, and rust.
 
+This ONLY works on LINUX. Possibly only on x86/libc (I've not tried on other arches
+or stdlib implementations).
+
 Notes about POSIX locks vs. flocks
 -----------------------------------
 
