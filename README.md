@@ -25,15 +25,27 @@ Simply invoking `go build` at the root of this project should create a
 posix-locks binary you can then run.
 It will grab a hardcoded lock in the current directory forever (until killed).
 
+```shell
+go run main.go
+```
+
 ### Running the python program
 
 As for the golang program, the python3 script will acquire a lock on a hardcoded
 lock in the root directory of this project, and sleep forever (until killed).
 
+```shell
+python posix_locks.py
+```
+
 ### Running the rust program
 
 As for previous programs, the rust version will acquire a lock on a hardcoded
-file in the root directory of this project, and sleep forever (until killed).
+file in the root directory of this project, and sleep forever (until killed).
+
+```shell
+cargo run
+```
 
 ### Results
 
